@@ -1,0 +1,80 @@
+---
+output: 
+  html_document: 
+    css: style.css
+    df_print: kable
+---
+
+```{r paman1,echo=FALSE,warning=FALSE,include=FALSE}
+#pacman autoload evt. manglende pakker
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(timeDate, DT,plotly,exams,e1071,WriteXLS,maps,rdrop2,knitr,ggplot2,openxlsx,quantmod,dygraphs,highcharter) #load various packages
+
+```
+
+# Google Forms
+
+Se videoen herunder, forsøg selv at lave et tilsvarende spørgeskema med Google Analyse. Du kan under videoen se de spørgsmål der er benyttet i udarbejdelsen af spørgeskemaet.
+
+<br>
+<div class='embed-container'><iframe src='https://player.vimeo.com/video/285654694' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+  
+
+Design selv et skema med min. 4 sektioner med både gitter kort svar multiple choice, sørg for man bliver sendt til de korrekte sektioner alt efter hvilket svar man angiver.
+
+Test skemaet både ved selv at angive svar og få dine kammerater til at besvare skemaet. Husk at se om skemaet står korrekt i Excel eller Google Sheets.  
+
+Du skal have en gmail for at benytte Google drev som giver adgang til spørgeskemaet.  
+
+Vi ønsker svar fra respondenter mellem 18 og 20 år i dette eksempel. Teksten til spørgeskekmaet står mellem linjerne herunder:
+
+***
+
+**Sektion 1**  
+Hvor gammel er du?  
+Yngre end 18 	Hop til slut  
+18		Gå til næste sektion  
+19		Gå til næste sektion  
+20		Gå til næste sektion  
+Ældre end 20 	Hop til slut  
+  
+**Sektion 2**    
+Er du tilfreds med din bolig?  
+Ja 	Gå til sektion 4  
+Nej	Gå til næste sektion  
+
+**Sektion 3**  
+Hvad er du utilfreds med?  
+		Ja	Nej	Ved ikke  
+Plads  
+Beliggenhed  
+Pris  
+Trafikforbindelse  
+Larm  
+  
+Andet angiv hvilket  
+  
+**Sektion 4**  
+Hvilken bolig har du nu?  
+Andel  
+Ejer (egen)  
+Bor hjemme  
+
+Tak fordi du brugte tid på spørgeskemaet  
+
+***  
+
+
+
+
+
+
+## Metode tips eksempler på Do's and Dont's .
+
+Hent [word-filen her](./filer/metodetips.docx)   
+
+Hent [pdf-filen her](./filer/metodetips.pdf)   
+
+<!-- Hent <a href="https://excel1.tepedu.dk/filer/metodetips.pdf" target="_blank">pdf-filen her</a>   -->
+

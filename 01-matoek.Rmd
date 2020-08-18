@@ -1,0 +1,97 @@
+# Basis excel
+
+```{r pacman01,echo=FALSE,warning=FALSE,include=FALSE}
+#pacman autoload evt. manglende pakker
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(timeDate, DT,plotly,exams,e1071,WriteXLS,maps,rdrop2,knitr,ggplot2,openxlsx,quantmod) #load various packages
+
+```
+
+
+Forsøg at løse følgende:
+Vi vil starte med at hente en version af Excel hvis du ikke allerede har fået en version installeret. Der ligger vejledning omkring it <a href="https://www.cphbusiness.dk/media/1243/itsystemerpc5.pdf" target="_blank">her</a>
+
+Man henter så Office 365 <a href="http://login.efif.dk/" target="_blank">her</a>
+
+Når du har hentet Office 365 fortsætter du med opgaverne i videoerne:
+
+## Selvstudie med videoløsning 1
+Se videoen, forsøg derefter at gøre det samme på din egen bærbare som i videoen.
+
+### Basis Excel 1
+
+<br>
+<div class='embed-container'><iframe src='https://player.vimeo.com/video/285655354' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+
+## Selvstudie med videoløsning 2
+Se videoen, forsøg derefter at gøre det samme på din egen bærbare som i videoen.
+
+### Basis Excel 2
+
+<br>
+<div class='embed-container'><iframe src='https://player.vimeo.com/video/285655286' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+
+
+
+```{r OMX-data2, include=FALSE}
+
+test <- getSymbols.yahoo(c("DANSKE.CO","SYDB.CO"),env=(.GlobalEnv),src="yahoo",periodicity = "daily",from = "2018-01-01", to = Sys.Date())
+ddbsyd <- as.data.frame(cbind(DANSKE.CO[,6]  , SYDB.CO[,6]  ))
+
+names(ddbsyd) <- c("DANSKE BANK","SYDBANK")
+# DKdf[is.na(DKdf)] <- 0 #Replace NA with 0
+
+write.xlsx(ddbsyd, file = "Danske aktiekurser.xlsx", sheetName = "Kurser",colNames = TRUE,rowNames = TRUE,firstActiveRow = 2,  firstActiveCol = 2)
+
+
+```
+
+## Selvstudie med videoløsning 3  
+Se videoen herunder, forsøg derefter at sammenligne 2 valgfrie aktier på din egen bærbare som i videoen. Husk der mangler ofte observationer, hvis der er dage uden registreret aktiekurs, skal du fjerne disse fra data.
+ 
+Hvis det driller med formatet af aktiedata, kan du hente en fil med aktiekurser for Danske Bank og Sydbank <a href="Bank aktiekurser.xlsx" download>her</a>.  
+
+```{r,  include=F, echo=FALSE,warning=FALSE}
+datatable(data.frame(ddbsyd))
+```
+
+
+### Basis Excel 3  
+<br>
+<div class='embed-container'><iframe src='https://player.vimeo.com/video/285655173' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+<br>
+
+
+Du kan se oversættelser mellem danske og engelske excel koder <a href="https://excel1.tepedu.dk/excel-oversttelser.html" target="_blank">her</a>  
+
+
+
+
+
+
+
+## Selvstudie med videoløsning 4 
+### Basis Excel 4  
+Se videoen herunder:
+
+<br>
+<div class='embed-container'><iframe src='https://player.vimeo.com/video/285654592' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+
+Besvar følgende spørgsmål, vent med at se videoen med løsningsforslag til du har forsøgt dig:  
+
+1. Hent derefter datasættet [Ford Focus.xlsx her](./filer/FordFocus.xlsx) fra mappen med datafiler.   
+2. Hvilken bil er den dyreste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget dyrere end de øvrige?   
+3. Hvilken bil er den billigste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget billigere? 4. Hvor mange biler er til salg i København?  
+5. Hvor mange biler koster under 100.000,-?  
+6. Lav et diagram med alder på x-aksen og pris på y-aksen. 
+
+### Løsningsforslag til Ford Focus opgaven
+
+<br>
+<div class='embed-container'><iframe src='https://player.vimeo.com/video/285654980' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+
