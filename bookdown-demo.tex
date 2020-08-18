@@ -1,0 +1,654 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Metode Data for finansøkonomer},
+  pdfauthor={Thomas Petersen},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Metode Data for finansøkonomer}
+\author{Thomas Petersen}
+\date{2020-08-18}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{section}{%
+\chapter*{}\label{section}}
+\addcontentsline{toc}{chapter}{}
+
+\hypertarget{basis-excel}{%
+\chapter{Basis excel}\label{basis-excel}}
+
+Forsøg at løse følgende:
+Vi vil starte med at hente en version af Excel hvis du ikke allerede har fået en version installeret. Der ligger vejledning omkring it her
+
+Man henter så Office 365 her
+
+Når du har hentet Office 365 fortsætter du med opgaverne i videoerne:
+
+\hypertarget{selvstudie-med-videoluxf8sning-1}{%
+\section{Selvstudie med videoløsning 1}\label{selvstudie-med-videoluxf8sning-1}}
+
+Se videoen, forsøg derefter at gøre det samme på din egen bærbare som i videoen.
+
+\hypertarget{basis-excel-1}{%
+\subsection{Basis Excel 1}\label{basis-excel-1}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{selvstudie-med-videoluxf8sning-2}{%
+\section{Selvstudie med videoløsning 2}\label{selvstudie-med-videoluxf8sning-2}}
+
+Se videoen, forsøg derefter at gøre det samme på din egen bærbare som i videoen.
+
+\hypertarget{basis-excel-2}{%
+\subsection{Basis Excel 2}\label{basis-excel-2}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{selvstudie-med-videoluxf8sning-3}{%
+\section{Selvstudie med videoløsning 3}\label{selvstudie-med-videoluxf8sning-3}}
+
+Se videoen herunder, forsøg derefter at sammenligne 2 valgfrie aktier på din egen bærbare som i videoen. Husk der mangler ofte observationer, hvis der er dage uden registreret aktiekurs, skal du fjerne disse fra data.
+
+Hvis det driller med formatet af aktiedata, kan du hente en fil med aktiekurser for Danske Bank og Sydbank her.
+
+\hypertarget{basis-excel-3}{%
+\subsection{Basis Excel 3}\label{basis-excel-3}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+Du kan se oversættelser mellem danske og engelske excel koder her
+
+\hypertarget{selvstudie-med-videoluxf8sning-4}{%
+\section{Selvstudie med videoløsning 4}\label{selvstudie-med-videoluxf8sning-4}}
+
+\hypertarget{basis-excel-4}{%
+\subsection{Basis Excel 4}\label{basis-excel-4}}
+
+Se videoen herunder:
+
+\begin{embed-container}
+
+\end{embed-container}
+
+Besvar følgende spørgsmål, vent med at se videoen med løsningsforslag til du har forsøgt dig:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Hent derefter datasættet \href{./filer/FordFocus.xlsx}{Ford Focus.xlsx her} fra mappen med datafiler.\\
+\item
+  Hvilken bil er den dyreste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget dyrere end de øvrige?\\
+\item
+  Hvilken bil er den billigste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget billigere? 4. Hvor mange biler er til salg i København?\\
+\item
+  Hvor mange biler koster under 100.000,-?\\
+\item
+  Lav et diagram med alder på x-aksen og pris på y-aksen.
+\end{enumerate}
+
+\hypertarget{luxf8sningsforslag-til-ford-focus-opgaven}{%
+\subsection{Løsningsforslag til Ford Focus opgaven}\label{luxf8sningsforslag-til-ford-focus-opgaven}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{pivottabeller}{%
+\chapter{Pivottabeller}\label{pivottabeller}}
+
+\hypertarget{pivottabeller-1}{%
+\section{Pivottabeller 1}\label{pivottabeller-1}}
+
+Her er 4 korte videoer der viser hvordan pivottabeller fungerer.
+
+Hent datasættet \href{./filer/titanic.xls}{titanic.xls her}, se videoerne og forsøg at gentage hvad videoerne viser:
+
+\hypertarget{titanic-1}{%
+\subsection{Titanic 1}\label{titanic-1}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{titanic-2}{%
+\subsection{Titanic 2}\label{titanic-2}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{titanic-3}{%
+\subsection{Titanic 3}\label{titanic-3}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{titanic-4}{%
+\subsection{Titanic 4}\label{titanic-4}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{pivottabeller-2}{%
+\section{Pivottabeller 2}\label{pivottabeller-2}}
+
+Hent datasættet \href{./filer/AFFAIRS.xls}{AFFAIRS.xls her}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Hvor mange kvinder har været utro?
+\item
+  Hvor mange mænd har været utro?
+\item
+  Indtegn andelen af utro kvinder og mænd i et piechart
+\end{enumerate}
+
+Se videoløsningen herunder:
+
+\hypertarget{pivottabeller-affuxe6rer-2}{%
+\subsection{Pivottabeller affærer 2}\label{pivottabeller-affuxe6rer-2}}
+
+\begin{embed-container}
+
+\end{embed-container}
+
+\hypertarget{selvtest-pivottabeller}{%
+\section{Selvtest pivottabeller}\label{selvtest-pivottabeller}}
+
+Selvtest pivottabeller Realkredit
+
+\hypertarget{excel-oversuxe6ttelser}{%
+\chapter{Excel oversættelser}\label{excel-oversuxe6ttelser}}
+
+Nedenfor er en liste med de forskellige engelske og danske koder, man kan søge i filen hvis man skal finde en kode. Det er ofte en fordel, hvis man skal finde argumenter til en funktion eller eksempler, at man kan Google den engelske kode, så er der flere hjælpesider.
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\textbf{Engelsk kode} & \textbf{Dansk kode}\tabularnewline
+\midrule
+\endhead
+ABS & ABS\tabularnewline
+ACCRINT & PÅLØBRENTE\tabularnewline
+ACCRINTM & PÅLØBRENTE.UDLØB\tabularnewline
+ACOS & ARCCOS\tabularnewline
+ACOSH & ARCCOSH\tabularnewline
+ADDRESS & ADRESSE\tabularnewline
+AMORDEGRC & AMORDEGRC\tabularnewline
+AMORLINC & AMORLINC\tabularnewline
+AND & OG\tabularnewline
+AREAS & OMRÅDER\tabularnewline
+ASIN & ARCSIN\tabularnewline
+ASINH & ARCSINH\tabularnewline
+ATAN & ARCTAN\tabularnewline
+ATAN2 & ARCTAN2\tabularnewline
+ATANH & ARCTANH\tabularnewline
+AVEDEV & MAD\tabularnewline
+AVERAGE & MIDDEL\tabularnewline
+AVERAGEA & MIDDELV\tabularnewline
+BATHTEXT & BATHTEKST (ikke Excel 2000)\tabularnewline
+BESSELI & BESSELI\tabularnewline
+BESSELJ & BESSELJ\tabularnewline
+BESSELK & BESSELK\tabularnewline
+BESSELY & BESSELY\tabularnewline
+BETADIST & BETAFORDELING\tabularnewline
+BETAINV & BETAINV\tabularnewline
+BIN2DEC & BIN.TIL.DEC\tabularnewline
+BIN2HEX & BIN.TIL.HEX\tabularnewline
+BIN2OCT & BIN.TIL.OKT\tabularnewline
+BINOMDIST & BINOMIALFORDELING\tabularnewline
+CALL & KALD (kun Excel 2000)\tabularnewline
+CEILING & AFRUND.LOFT\tabularnewline
+CELL & CELLE\tabularnewline
+CHAR & TEGN\tabularnewline
+CHIDIST & CHIFORDELING\tabularnewline
+CHIINV & CHIINV\tabularnewline
+CHITEST & CHITEST\tabularnewline
+CHOOSE & VÆLG\tabularnewline
+CLEAN & RENS\tabularnewline
+CODE & KODE\tabularnewline
+COLUMN & KOLONNE\tabularnewline
+COLUMNS & KOLONNER\tabularnewline
+COMBIN & KOMBIN\tabularnewline
+COMPLEX & KOMPLEKS\tabularnewline
+CONCATENATE & SAMMENKÆDNING\tabularnewline
+CONFIDENCE & KONFIDENSINTERVAL\tabularnewline
+CONVERT & KONVERTER\tabularnewline
+CORREL & KORRELATION\tabularnewline
+COS & COS\tabularnewline
+COSH & COSH\tabularnewline
+COUNT & TÆL\tabularnewline
+COUNTA & TÆLV\tabularnewline
+COUNTBLANK & ANTAL.BLANKE\tabularnewline
+COUNTIF & TÆL.HVIS\tabularnewline
+COUPDAYBS & KUPONDAGE.SA\tabularnewline
+COUPDAYS & KUPONDAGE.A\tabularnewline
+COUPDAYSNC & KUPONDAGE.ANK\tabularnewline
+COUPNCD & KUPONDAG.NÆSTE\tabularnewline
+COUPNUM & KUPONBETALINGER\tabularnewline
+COUPPCD & KUPONDAG.FORRIGE\tabularnewline
+COVAR & KOVARIANS\tabularnewline
+CRITBINOM & KRITBINOM\tabularnewline
+CUMIPMT & AKKUM.RENTE\tabularnewline
+CUMPRINC & AKKUM.HOVEDSTOL\tabularnewline
+DATE & DATO\tabularnewline
+DATEDIF & DATO.FORSKEL\tabularnewline
+DATEVALUE & DATOVÆRDI\tabularnewline
+DAVERAGE & DMIDDEL\tabularnewline
+DAY & DAG\tabularnewline
+DAYS360 & DAGE360\tabularnewline
+DB & DB\tabularnewline
+DCOUNT & DTÆL\tabularnewline
+DCOUNTA & DTÆLV\tabularnewline
+DDB & DSA\tabularnewline
+DEC2BIN & DEC.TIL.BIN\tabularnewline
+DEC2HEX & DEC.TIL.HEX\tabularnewline
+DEC2OCT & DEC.TIL.OKT\tabularnewline
+DEGREES & GRADER\tabularnewline
+DELTA & DELTA\tabularnewline
+DEVSQ & SAK\tabularnewline
+DGET & DHENT\tabularnewline
+DISC & DISKONTO\tabularnewline
+DMAX & DMAKS\tabularnewline
+DMIN & DMIN\tabularnewline
+DOLLAR & KR\tabularnewline
+DOLLARDE & KR.DECIMAL\tabularnewline
+DOLLARFR & KR.BRØK\tabularnewline
+DPRODUCT & DPRODUKT\tabularnewline
+DSTDEV & DSTDAFV\tabularnewline
+DSTDEVP & DSTDAFVP\tabularnewline
+DSUM & DSUM\tabularnewline
+DURATION & VARIGHED\tabularnewline
+DVAR & DVARIANS\tabularnewline
+DVARP & DVARIANSP\tabularnewline
+EDATE & EDATO\tabularnewline
+EFFECT & EFFEKTIV.RENTE\tabularnewline
+EOMONTH & SLUT.PÅ.MÅNED\tabularnewline
+ERF & FEJLFUNK\tabularnewline
+ERFC & FEJLFUNK.KOMP\tabularnewline
+ERROR.TYPE & FEJLTYPE\tabularnewline
+EVEN & LIGE\tabularnewline
+EXACT & EKSAKT\tabularnewline
+EXP & EKSP\tabularnewline
+EXPONDIST & EKSPFORDELING\tabularnewline
+FACT & FAKULTET\tabularnewline
+FACTDOUBLE & DOBBELT.FAKULTET\tabularnewline
+FALSE & FALSK\tabularnewline
+FDIST & FFORDELING\tabularnewline
+FIND & FIND\tabularnewline
+FINV & FINV\tabularnewline
+FISHER & FISHER\tabularnewline
+FISHERINV & FISHERINV\tabularnewline
+FIXED & FAST\tabularnewline
+FLOOR & AFRUND.GULV\tabularnewline
+FORECAST & PROGNOSE\tabularnewline
+FREQUENCY & FREKVENS\tabularnewline
+FTEST & FTEST\tabularnewline
+FV & FV\tabularnewline
+FVSCHEDULE & FVTABEL\tabularnewline
+GAMMADIST & GAMMAFORDELING\tabularnewline
+GAMMAINV & GAMMAINV\tabularnewline
+GAMMALN & GAMMALN\tabularnewline
+GCD & STØRSTE.FÆLLES.DIVISOR\tabularnewline
+GEOMEAN & GEOMIDDELVÆRDI\tabularnewline
+GESTEP & GETRIN\tabularnewline
+GETPIVOTDATA & GETPIVOTDATA\tabularnewline
+GROWTH & FORØGELSE\tabularnewline
+HARMEAN & HARMIDDELVÆRDI\tabularnewline
+HEX2BIN & HEX.TIL.BIN\tabularnewline
+HEX2DEC & HEX.TIL.DEC\tabularnewline
+HEX2OCT & HEX.TIL.OKT\tabularnewline
+HLOOKUP & VOPSLAG\tabularnewline
+HOUR & TIME\tabularnewline
+HYPERLINK & HYPERLINK\tabularnewline
+HYPGEOMDIST & HYPGEOFORDELING\tabularnewline
+IF & HVIS\tabularnewline
+IMABS & IMAGABS\tabularnewline
+IMAGINARY & IMAGINÆR\tabularnewline
+IMARGUMENT & IMAGARGUMENT\tabularnewline
+IMCONJUGATE & IMAGKONJUGERE\tabularnewline
+IMCOS & IMAGCOS\tabularnewline
+IMDIV & IMAGDIV\tabularnewline
+IMEXP & IMAGEKSP\tabularnewline
+IMLN & IMAGLN\tabularnewline
+IMLOG10 & IMAGLOG10\tabularnewline
+IMLOG2 & IMAGLOG2\tabularnewline
+IMPOWER & IMAGPOTENS\tabularnewline
+IMPRODUCT & IMAGPRODUKT\tabularnewline
+IMREAL & IMAGREELT\tabularnewline
+IMSIN & IMAGSIN\tabularnewline
+IMSQRT & IMAGKVROD\tabularnewline
+IMSUB & IMAGSUB\tabularnewline
+IMSUM & IMAGSUM\tabularnewline
+INDEX & INDEKS\tabularnewline
+INDIRECT & INDIREKTE\tabularnewline
+INFO & INFO\tabularnewline
+INT & HELTAL\tabularnewline
+INTERCEPT & SKÆRING\tabularnewline
+INTRATE & RENTEFOD\tabularnewline
+IPMT & R.YDELSE\tabularnewline
+IRR & IA\tabularnewline
+ISBLANK & ER.TOM\tabularnewline
+ISERR & ER.FJL\tabularnewline
+ISERROR & ER.FEJL\tabularnewline
+ISEVEN & ER.LIGE\tabularnewline
+ISLOGICAL & ER.LOGISK\tabularnewline
+ISNA & ER.IKKE.TILGÆNGELIG\tabularnewline
+ISNONTEXT & ER.IKKE.TEKST\tabularnewline
+ISNUMBER & ER.TAL\tabularnewline
+ISODD & ER.ULIGE\tabularnewline
+ISPMT & ISPMT\tabularnewline
+ISREF & ER.REFERENCE\tabularnewline
+ISTEXT & ER.TEKST\tabularnewline
+KURT & TOPSTEJL\tabularnewline
+LARGE & STØRSTE\tabularnewline
+LCM & MINDSTE.FÆLLES.MULTIPLUM\tabularnewline
+LEFT & VENSTRE\tabularnewline
+LEN & LÆNGDE\tabularnewline
+LINEST & LINREGR\tabularnewline
+LN & LN\tabularnewline
+LOG & LOG\tabularnewline
+LOG10 & LOG10\tabularnewline
+LOGEST & LOGREGR\tabularnewline
+LOGINV & LOGINV\tabularnewline
+LOGNORMDIST & LOGNORMFORDELING\tabularnewline
+LOOKUP & SLÅ.OP\tabularnewline
+LOWER & SMÅ.BOGSTAVER\tabularnewline
+MATCH & SAMMENLIGN\tabularnewline
+MAX & MAKS\tabularnewline
+MAXA & MAKSV\tabularnewline
+MDETERM & MDETERM\tabularnewline
+MDURATION & MVARIGHED\tabularnewline
+MEDIAN & MEDIAN\tabularnewline
+MID & MIDT\tabularnewline
+MIN & MIN\tabularnewline
+MINA & MINV\tabularnewline
+MINUTE & MINUT\tabularnewline
+MINVERSE & MINVERT\tabularnewline
+MIRR & MIA\tabularnewline
+MMULT & MPRODUKT\tabularnewline
+MOD & REST\tabularnewline
+MODE & HYPPIGST\tabularnewline
+MONTH & MÅNED\tabularnewline
+MROUND & MAFRUND\tabularnewline
+MULTINOMIAL & MULTINOMIAL\tabularnewline
+N & TAL\tabularnewline
+NA & IKKE.TILGÆNGELIG\tabularnewline
+NEGBINOMDIST & NEGBINOMFORDELING\tabularnewline
+NETWORKDAYS & ANTAL.ARBEJDSDAGE\tabularnewline
+NOMINAL & NOMINEL\tabularnewline
+NORMDIST & NORMFORDELING\tabularnewline
+NORMINV & NORMINV\tabularnewline
+NORMSDIST & STANDARDNORMFORDELING\tabularnewline
+NORMSINV & STANDARDNORMINV\tabularnewline
+NOT & IKKE\tabularnewline
+NOW & NU\tabularnewline
+NPER & NPER\tabularnewline
+NPV & NUTIDSVÆRDI\tabularnewline
+OCT2BIN & OKT.TIL.BIN\tabularnewline
+OCT2DEC & OKT.TIL.DEC\tabularnewline
+OCT2HEX & OKT.TIL.HEX\tabularnewline
+ODD & ULIGE\tabularnewline
+ODDFPRICE & ULIGE.KURS.PÅLYDENDE\tabularnewline
+ODDFYIELD & ULIGE.FØRSTE.AFKAST\tabularnewline
+ODDLPRICE & ULIGE.SIDSTE.KURS\tabularnewline
+ODDLYIELD & ULIGE.SIDSTE.AFKAST\tabularnewline
+OFFSET & FORSKYDNING\tabularnewline
+OR & ELLER\tabularnewline
+PEARSON & PEARSON\tabularnewline
+PERCENTILE & FRAKTIL\tabularnewline
+PERCENTRANK & PROCENTPLADS\tabularnewline
+PERMUT & PERMUT\tabularnewline
+PI & PI\tabularnewline
+PMT & YDELSE\tabularnewline
+POISSON & POISSON\tabularnewline
+POWER & POTENS\tabularnewline
+PPMT & H.YDELSE\tabularnewline
+PRICE & KURS\tabularnewline
+PRICEDISC & KURS.DISKONTO\tabularnewline
+PRICEMAT & KURS.UDLØB\tabularnewline
+PROB & SANDSYNLIGHED\tabularnewline
+PRODUCT & PRODUKT\tabularnewline
+PROPER & STORT.FORBOGSTAV\tabularnewline
+PV & NV\tabularnewline
+QUARTILE & KVARTIL\tabularnewline
+QUOTIENT & KVOTIENT\tabularnewline
+RADIANS & RADIANER\tabularnewline
+RAND & SLUMP\tabularnewline
+RANDBETWEEN & SLUMPMELLEM\tabularnewline
+RANK & PLADS\tabularnewline
+RATE & RENTE\tabularnewline
+RECEIVED & MODTAGET.VED.UDLØB\tabularnewline
+REGISTER.ID & REGISTER.ID\tabularnewline
+REPLACE & ERSTAT\tabularnewline
+REPT & GENTAG\tabularnewline
+RIGHT & HØJRE\tabularnewline
+ROMAN & ROMERTAL\tabularnewline
+ROUND & AFRUND\tabularnewline
+ROUNDDOWN & RUND.NED\tabularnewline
+ROUNDUP & RUND.OP\tabularnewline
+ROW & RÆKKE\tabularnewline
+ROWS & RÆKKER\tabularnewline
+RSQ & FORKLARINGSGRAD\tabularnewline
+RTD & RTD (ikke Excel 2000)\tabularnewline
+SEARCH & SØG\tabularnewline
+SECOND & SEKUND\tabularnewline
+SERIESSUM & SERIESUM\tabularnewline
+SIGN & FORTEGN\tabularnewline
+SIN & SIN\tabularnewline
+SINH & SINH\tabularnewline
+SKEW & SKÆVHED\tabularnewline
+SLN & LA\tabularnewline
+SLOPE & STIGNING\tabularnewline
+SMALL & MINDSTE\tabularnewline
+SQRT & KVROD\tabularnewline
+SQRTPI & KVRODPI\tabularnewline
+STANDARDIZE & STANDARDISER\tabularnewline
+STDEV & STDAFV\tabularnewline
+STDEVA & STDAFVV\tabularnewline
+STDEVP & STDAFVP\tabularnewline
+STDEVPA & STDAFVPV\tabularnewline
+STEYX & STFYX\tabularnewline
+SUBSTITUTE & UDSKIFT\tabularnewline
+SUBTOTAL & SUBTOTAL\tabularnewline
+SUM & SUM\tabularnewline
+SUMIF & SUM.HVIS\tabularnewline
+SUMPRODUCT & SUMPRODUKT\tabularnewline
+SUMSQ & SUMKV\tabularnewline
+SUMX2MY2 & SUMX2MY2\tabularnewline
+SUMX2PY2 & SUMX2PY2\tabularnewline
+SUMXMY2 & SUMXMY2\tabularnewline
+SYD & ÅRSAFSKRIVNING\tabularnewline
+TAN & TAN\tabularnewline
+TANH & TANH\tabularnewline
+TBILLEQ & STATSOBLIGATION\tabularnewline
+TBILLPRICE & STATSOBLIGATION.KURS\tabularnewline
+TBILLYIELD & STATSOBLIGATION.AFKAST\tabularnewline
+TDIST & TFORDELING\tabularnewline
+TEXT & TEKST\tabularnewline
+TIME & TID\tabularnewline
+TIMEVALUE & TIDSVÆRDI\tabularnewline
+TINV & TINV\tabularnewline
+TODAY & IDAG\tabularnewline
+TRANSPOSE & TRANSPONER\tabularnewline
+TREND & TENDENS\tabularnewline
+TRIM & FJERN.OVERFLØDIGE.BLANKE\tabularnewline
+TRIMMEAN & TRIMMIDDELVÆRDI\tabularnewline
+TRUE & SAND\tabularnewline
+TRUNC & AFKORT\tabularnewline
+TTEST & TTEST\tabularnewline
+TYPE & VÆRDITYPE\tabularnewline
+UPPER & STORE.BOGSTAVER\tabularnewline
+VALUE & VÆRDI\tabularnewline
+VAR & VARIANS\tabularnewline
+VARA & VARIANSV\tabularnewline
+VARP & VARIANSP\tabularnewline
+VARPA & VARIANSPV\tabularnewline
+VDB & VSA\tabularnewline
+VLOOKUP & LOPSLAG\tabularnewline
+WEEKDAY & UGEDAG\tabularnewline
+WEEKNUM & UGE.NR\tabularnewline
+WEIBULL & WEIBULL\tabularnewline
+WORKDAY & ARBEJDSDAG\tabularnewline
+XIRR & INTERN.RENTE\tabularnewline
+XNPV & NETTO.NUTIDSVÆRDI\tabularnewline
+YEAR & ÅR\tabularnewline
+YEARFRAC & ÅR.BRØK\tabularnewline
+YIELD & AFKAST\tabularnewline
+YIELDDISC & AFKAST.DISKONTO\tabularnewline
+YIELDMAT & AFKAST.UDLØBSDATO\tabularnewline
+ZTEST & ZTEST\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{google-forms}{%
+\chapter{Google Forms}\label{google-forms}}
+
+Se videoen herunder, forsøg selv at lave et tilsvarende spørgeskema med Google Analyse. Du kan under videoen se de spørgsmål der er benyttet i udarbejdelsen af spørgeskemaet.
+
+\begin{embed-container}
+
+\end{embed-container}
+
+Design selv et skema med min. 4 sektioner med både gitter kort svar multiple choice, sørg for man bliver sendt til de korrekte sektioner alt efter hvilket svar man angiver.
+
+Test skemaet både ved selv at angive svar og få dine kammerater til at besvare skemaet. Husk at se om skemaet står korrekt i Excel eller Google Sheets.
+
+Du skal have en gmail for at benytte Google drev som giver adgang til spørgeskemaet.
+
+Vi ønsker svar fra respondenter mellem 18 og 20 år i dette eksempel. Teksten til spørgeskekmaet står mellem linjerne herunder:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Sektion 1}\\
+Hvor gammel er du?\\
+Yngre end 18 Hop til slut\\
+18 Gå til næste sektion\\
+19 Gå til næste sektion\\
+20 Gå til næste sektion\\
+Ældre end 20 Hop til slut
+
+\textbf{Sektion 2}\\
+Er du tilfreds med din bolig?\\
+Ja Gå til sektion 4\\
+Nej Gå til næste sektion
+
+\textbf{Sektion 3}\\
+Hvad er du utilfreds med?\\
+Ja Nej Ved ikke\\
+Plads\\
+Beliggenhed\\
+Pris\\
+Trafikforbindelse\\
+Larm
+
+Andet angiv hvilket
+
+\textbf{Sektion 4}\\
+Hvilken bolig har du nu?\\
+Andel\\
+Ejer (egen)\\
+Bor hjemme
+
+Tak fordi du brugte tid på spørgeskemaet
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{metode-tips-eksempler-puxe5-dos-and-donts-.}{%
+\section{Metode tips eksempler på Do's and Dont's .}\label{metode-tips-eksempler-puxe5-dos-and-donts-.}}
+
+Hent \href{./filer/metodetips.docx}{word-filen her}
+
+Hent \href{./filer/metodetips.pdf}{pdf-filen her}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
