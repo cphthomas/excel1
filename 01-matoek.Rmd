@@ -81,7 +81,7 @@ Se videoen herunder:
 <div class='embed-container'><iframe src='https://player.vimeo.com/video/285654592' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <br>
 
-Besvar følgende spørgsmål, vent med at se videoen med løsningsforslag til du har forsøgt dig:  
+Besvar følgende spørgsmål, vent med at se videoen med løsningsforslag til efter du har forsøgt dig:  
 
 1. Hent derefter datasættet [Ford Focus.xlsx her](./filer/FordFocus.xlsx) fra mappen med datafiler.   
 2. Hvilken bil er den dyreste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget dyrere end de øvrige?   
