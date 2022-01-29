@@ -59,7 +59,7 @@ Se videoløsningen herunder:
 
 ## Selvtest pivottabeller
 
-<a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=64" target="_blank">Selvtest pivottabeller data Realkredit </a>  
+<a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=64" target="_blank">Selvtest pivottabeller Realkredit </a>  
   
 
 
