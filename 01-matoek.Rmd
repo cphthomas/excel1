@@ -86,7 +86,7 @@ Besvar følgende spørgsmål, vent med at se videoen med løsningsforslag til du
 1. Hent derefter datasættet [Ford Focus.xlsx her](./filer/FordFocus.xlsx) fra mappen med datafiler.   
 2. Hvilken bil er den dyreste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget dyrere end de øvrige?   
 3. Hvilken bil er den billigste? Hvad kan evt. forklare, hvorfor netop denne bil er så meget billigere? 4. Hvor mange biler er til salg i København?  
-5. Hvor mange biler koster under 100.000,-?  
+5. Hvor mange biler koster under 100.000,- DKK?  
 6. Lav et diagram med alder på x-aksen og pris på y-aksen. 
 
 ### Løsningsforslag til Ford Focus opgaven
