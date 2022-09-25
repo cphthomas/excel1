@@ -5,9 +5,9 @@ output:
     df_print: kable
 ---
 
-```{r paman1,echo=FALSE,warning=FALSE,include=FALSE}
+```{r paman123,echo=FALSE,warning=FALSE,include=FALSE}
 #pacman autoload evt. manglende pakker
-if (!require("pacman")) install.packages("pacman")
+# if (!require("pacman")) install.packages("pacman")
 pacman::p_load(timeDate, DT,plotly,exams,e1071,WriteXLS,maps,rdrop2,knitr,ggplot2,openxlsx,quantmod,dygraphs,highcharter) #load various packages
 
 ```
@@ -77,4 +77,6 @@ Hent [word-filen her](./filer/metodetips.docx)
 Hent [pdf-filen her](./filer/metodetips.pdf)   
 
 <!-- Hent <a href="https://excel1.tepedu.dk/filer/metodetips.pdf" target="_blank">pdf-filen her</a>   -->
+
+
 

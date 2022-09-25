@@ -1,0 +1,44 @@
+---
+output: 
+  html_document: 
+    css: style.css
+    df_print: kable
+---
+
+```{r paman1,echo=FALSE,warning=FALSE,include=FALSE}
+#pacman autoload evt. manglende pakker
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(timeDate, DT,plotly,exams,e1071,WriteXLS,maps,rdrop2,knitr,ggplot2,openxlsx,quantmod,dygraphs,highcharter) #load various packages
+
+```
+
+# Hent aktiekurser i regneark og gem funktionsnavne
+
+Se nedenstående video-playlist, der handler om specielle funktioner i Google Sheets og Excel:
+
+## Video playlist
+<br></br>
+<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://vimeo.com/showcase/9847340/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe></div>
+
+<br></br><br></br><br></br>
+
+## Spørgsmål 
+
+1. Genskab de funktioner og figurer, der er i de 10 videoer.
+
+2. Ændres GOOG volumen pludseligt - hvorfor eller hvorfor ikke (vink: split)?
+
+3. Hent aktiekurser 1000 dage tilbage for 3 forsikringsselskaber med sparklines, illustrer grafisk volumen og lukkekurs i samme figur.
+
+4. Lav en kopi af <a href="https://docs.google.com/spreadsheets/d/1FwYdO5GsnBuUde6IUtqRs30KmrR0OSUSsHd9O3c48A8/edit?usp=sharing" target="_blank">Google sheet Financials datasættet her</a> del filen med din gruppe med @ funktionen i Google.
+
+5. Kolonnen Headquarters i Financials datasættet skal ændres til 2 kolonner, en der hedder Headquarters Stat og Headquarters By.
+
+6. Vis i cirkeldiagram, kolonnediagram og tabel, hvordan virksomhederne fordeler sig på stater.
+
+7. Vis i tabel hvor virksomhederne fordeler sig på sektor og stat.
+
+8. Lav selv interessante figurer over sektor og relevante variable.
+
+
+
